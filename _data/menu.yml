@@ -1,0 +1,32 @@
+- name: Start
+  link: /verein/
+- name: News
+  link: /verein/news.html
+- name: FAQ
+  link: /verein/faq.html
+- name: Archiv
+  link: /verein/archiv.html
+  submenu: true                        # auf diesen Seiten soll das Untermenu angezeigt werden, sonst nicht
+# - name: \- Protokolle
+#   link: /verein/protokolle.html
+#   submenu: true
+# - name: \- Einladungen
+#   link: /verein/einladungen.html
+#   submenu: true
+# - name: \- Vortr&auml;ge
+#   link: /verein/seminare.html
+#   submenu: true
+- name: F&uuml;r Mitglieder
+  link: https://easyverein.com/public/MGEV/
+- name: Mailingliste
+  link: /verein/mailinglist.html
+- name: Mitglieder
+  link: /verein/liste.html
+- name: Satzung
+  link: /verein/satzung.html
+- name: Download
+  link: /verein/download.html
+- name: Datenschutz
+  link: /verein/datenschutz.html
+- name: Impressum
+  link: /verein/impressum.html

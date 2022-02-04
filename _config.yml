@@ -1,0 +1,38 @@
+collections:
+  einladung:
+    output: true
+
+  protokoll:
+    output: true
+    show_archive: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "protokoll"
+    values:
+      layout: "protokoll"
+      type: "Mitgliederversammlung"
+      title: "Morgengrauen"
+      permalink: "/verein/:collection/:name"
+      show_archive: true
+  - scope:
+      path: ""
+      type: "einladung"
+    values:
+      layout: "einladung"
+      type: "Mitgliederversammlung"
+      title: "Morgengrauen"
+      permalink: "/verein/:collection/:name"
+      show_archive: true
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+      title: "Morgengrauen"
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-redirect-from

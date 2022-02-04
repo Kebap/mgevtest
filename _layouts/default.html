@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" href="/assets/css/styles.css" type="text/css" media="screen">
+{% feed_meta %}
+{% seo %}
+<title>{{ page.title }}</title>
+<style type="text/css">
+<!--
+/* found in: verein/satzung,. */
+.satzung, .index {
+	list-style:none;
+	margin-left:0px;
+	padding-left:0px;
+}
+/* found in: verein/satzung,. */
+.satzung li {
+	padding-bottom:15px;
+}
+/* found in: verein/satzung,. */
+.index {
+	font-weight:bold;
+}
+/* found in: verein/satzung,. */
+.unterpara li {
+	list-style-type : lower-alpha;
+	padding-bottom:0px;
+}
+/* found in: verein/satzung,. */
+.para li {
+	padding-bottom:0px;
+}
+/* found in: verein/satzung,. */
+.satzung li:first-line {
+	font-weight:bold;
+}
+/* found in: verein/satzung,. */
+.para li:first-line {
+	font-weight:normal;
+}
+/* found in: verein/satzung,. */
+.unterpara li:first-line {
+	font-weight:normal;
+}
+/* found in: faq,. */
+dt {
+	font-weight:bold;
+	padding-bottom:10px;
+}
+/* found in: faq,. */
+dd {
+	padding-left:0px;
+	margin-left:15px;
+	margin-bottom:10px;
+}
+/* found in: archiv/index,. */
+nav ul.submenu li {
+	display:block;
+	text-align:left;
+}
+/* found in: verein/datenschutz, verein/impressum,. */
+#vorstand th {
+	padding-right: 10px;
+	border:none;
+	font-weight:normal;
+	text-align:left;
+}
+-->
+</style>
+</head>
+<body>
+<nav>
+{% include menu.html archive=page.show_archive %}
+</nav>
+<div id="content">
+{{ content }}
+</div>
+</body>
+</html>

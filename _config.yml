@@ -1,3 +1,6 @@
+baseurl: /mgevtest
+exclude: ['README.md']
+
 collections:
   einladung:
     output: true

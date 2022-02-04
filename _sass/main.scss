@@ -1,0 +1,220 @@
+body {
+	font-size:0.8em;
+	text-decoration:none;
+	font-family:Verdana,Geneva,Arial,Helvetica,Sans-Serif;
+	background:#FFFFFF url(/verein/bilder/back.gif) repeat-y;
+	color:#000000;
+	margin:0px;
+	padding:0px;
+}
+
+a {
+	color:#1144aa;
+	text-decoration:underline;
+}
+
+h2 {
+	text-align:left;
+	font-size:1.2em;
+	font-weight:bold;
+	text-decoration:underline;
+}
+
+h3 {
+	text-align:left;
+	font-size:1.0em;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+img {
+	border:none;
+}
+
+#hosting {
+	font-family:Verdana,Geneva,Arial,Helvetica,Sans-Serif;
+	margin-top:2em;
+	font-size:1em;
+	font-weight:bold;
+}
+
+* html #secnav li
+{ /* fuer IE Win \*/
+	margin: 0px 0px 0px -3px;
+/* */
+}
+
+nav {
+	float:left;
+	font-size:0.8em;
+	background:transparent url(/verein/bilder/logoneu.gif) no-repeat;
+	padding-top:100px;
+	width: 100px
+}
+
+nav ul {
+	margin:10px 0px 0px 0px;
+	padding:0px;
+	list-style:none;
+	border:none;
+	font-weight:bold;
+	line-height:1.5em;
+}
+
+nav li {
+	display:block;
+	margin:0px;
+	white-space:nowrap;
+	padding:0px;
+}
+
+nav li a.current {
+    background-color:#99ccff;
+	border-bottom:1px solid #FFFFFF;
+	border-right:1px solid #FFFFFF;
+	border-top:1px solid #77aadd;
+	border-left:1px solid #77aadd;
+	color:#ff0000;
+}
+
+nav ul.submenu {
+	margin-top:0px;
+}
+
+nav ul.submenu li {
+	margin-left:1em;
+	display:none;
+}
+
+nav ul.submenu a {
+	width:7em;
+	text-align:right;
+}
+
+nav li a {
+	text-align:left;
+	width:8em;
+	text-decoration:none;
+	display:block;
+	padding:2px 5px 2px 5px;
+	border-bottom:1px solid #77aadd;
+	border-right:1px solid #77aadd;
+	border-top:1px solid #FFFFFF;
+	border-left:1px solid #FFFFFF;
+	color:#000000;
+}
+
+nav li a:hover {
+	background-color:#99ccff;
+	border-bottom:1px solid #FFFFFF;
+	border-right:1px solid #FFFFFF;
+	border-top:1px solid #77aadd;
+	border-left:1px solid #77aadd;
+}
+
+#content {
+	padding:0px 10px 10px 10px;
+}
+
+#content, #footer, #secnav {
+	max-width:800px;
+	margin:0px 0px 0px 9em;
+}
+
+#content {
+	background:transparent url(/verein/bilder/logo.jpg) no-repeat;
+	padding-top:55px;
+}
+
+#content dd {
+	padding-bottom:0px;
+	margin-left:20px;
+}
+
+#content dt {
+	font-weight:bold;
+	font-style:italic;
+}
+
+#footer {
+	clear:both;
+	text-align:right;
+	font-size:0.8em;
+	font-weight:bold;
+	padding:2px;
+	margin-top:10px;
+	/*background-color:#99ccff;*/
+}
+
+.great {
+	font-size:1.4em;
+	font-weight:bold;
+}
+
+.imglinks {
+	float:left;
+}
+
+.imgrechts {
+	float:right;
+}
+
+.liste {
+	margin-left:15px;
+	padding-left:0px
+}
+
+ol.liste {
+	margin-left:25px;
+}
+
+.liste li {
+	padding-bottom:5px;
+}
+
+.tabelle {
+	border-left:1px solid #000000;
+	border-top:1px solid #000000;
+	border-collapse:collapse;
+}
+
+.tabelle a {
+	text-decoration:none;
+}
+
+.tabelle a:hover {
+	text-decoration:underline;
+}
+
+.tabelle td,th {
+	border-right:1px solid #000000;
+	border-bottom:1px solid #000000;
+	padding:2px 5px 2px 5px;
+	vertical-align:top;
+}
+
+.tabelle th {
+	background-color:#6666FF;
+	color:#FFFFFF;
+}
+
+.tabelle2 a {
+	text-decoration:none;
+}
+
+.tabelle2 a:hover {
+	text-decoration:underline;
+}
+
+.tabelle2 td {
+	padding:2px 5px 2px 5px;
+	vertical-align:top;
+}
+
+
+/* M 2022 */
+
+.indented {
+	margin-left:15px;
+	padding-left:0px
+}

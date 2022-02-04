@@ -1,0 +1,14 @@
+<ul>{% for item in site.data.menu %}
+<li ><a {% if item.link == page.url or (include.archive and item.submenu and (page.layout == "einladung" or page.layout == "protokoll")) %} class="current"{% endif %} href="{{ item.link }}">{{ item.name }}</a>
+{% if include.archive and item.submenu %}<ul class="submenu">{% for subitem in site.data.submenu %}
+<li><a {% if subitem.link == page.url %} class="current"{% endif %} href="{{ subitem.link }}">{{ subitem.name }}</a></li>
+{% endfor %}</ul>{% endif %}</li>
+{% endfor %}
+<li style="margin:10px 0px 0px 0px;"><a href="http://mg.mud.de">mg.mud.de</a></li>
+<li style="margin:10px 0px 0px 0px;"><a href="mailto:vorstand@mg.mud.de">Email senden</a></li>
+</ul>
+
+<div id="hosting">
+<div style="margin-left:5px;margin-bottom:1em;">hosted by</div>
+<a href="http://www.netcologne.de/" target="_blank"><img src="/verein/bilder/nc_logo.jpg" alt="NetCologne"></a>
+<h1 style="display:none;">F&ouml;rderverein Projekt MorgenGrauen e.V.</h1>

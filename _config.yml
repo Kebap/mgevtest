@@ -1,6 +1,3 @@
-baseurl: /verein
-exclude: ['README.md']
-
 collections:
   einladung:
     output: true
@@ -12,12 +9,17 @@ collections:
 defaults:
   - scope:
       path: ""
+      type: "posts"
+    values:
+      permalink: "/verein/news/:year-:month-:day-:title:output_ext"
+  - scope:
+      path: ""
       type: "protokoll"
     values:
       layout: "protokoll"
       type: "Mitgliederversammlung"
       title: "Morgengrauen"
-      permalink: "/verein/:collection/:name"
+      permalink: "/verein/:collection/:name:output_ext"
       show_archive: true
   - scope:
       path: ""
@@ -26,7 +28,7 @@ defaults:
       layout: "einladung"
       type: "Mitgliederversammlung"
       title: "Morgengrauen"
-      permalink: "/verein/:collection/:name"
+      permalink: "/verein/:collection/:name:output_ext"
       show_archive: true
   - scope:
       path: ""
@@ -39,3 +41,6 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-redirect-from
+
+feed:
+  path: /verein/feed.xml

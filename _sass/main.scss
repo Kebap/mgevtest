@@ -1,3 +1,5 @@
+/* Base */
+
 body {
 	font-size:0.8em;
 	text-decoration:none;
@@ -31,26 +33,20 @@ img {
 	border:none;
 }
 
-#hosting {
-	font-family:Verdana,Geneva,Arial,Helvetica,Sans-Serif;
-	margin-top:2em;
-	font-size:1em;
-	font-weight:bold;
-}
 
-* html #secnav li
-{ /* fuer IE Win \*/
-	margin: 0px 0px 0px -3px;
-/* */
-}
+/* Layout */
 
-nav {
+#sidebar {
 	float:left;
-	font-size:0.8em;
+	/* font-size:0.8em; */
 	background:transparent url(/verein/bilder/logoneu.gif) no-repeat;
 	padding-top:100px;
 	width: 100px
 }
+
+
+/* Navigationselemente */
+
 
 nav ul {
 	margin:10px 0px 0px 0px;
@@ -112,6 +108,26 @@ nav li a:hover {
 	border-left:1px solid #77aadd;
 }
 
+
+/* Werbung für Hoster */
+
+
+#hosting {
+	font-family:Verdana,Geneva,Arial,Helvetica,Sans-Serif;
+	margin-top:2em;
+	font-size:1em;
+	font-weight:bold;
+}
+
+* html #secnav li
+{ /* fuer IE Win \*/
+	margin: 0px 0px 0px -3px;
+}
+
+
+/* Hauptbereich für Inhalte */
+
+
 #content {
 	padding:0px 10px 10px 10px;
 }
@@ -136,8 +152,12 @@ nav li a:hover {
 	font-style:italic;
 }
 
+
+/* Footer - haben wir sowas überhaupt? */
+
+
 #footer {
-	clear:both;
+/*	clear:both; */
 	text-align:right;
 	font-size:0.8em;
 	font-weight:bold;
@@ -145,6 +165,10 @@ nav li a:hover {
 	margin-top:10px;
 	/*background-color:#99ccff;*/
 }
+
+
+/* Kleinkram noch genauer zu beschreiben */
+
 
 .great {
 	font-size:1.4em;
@@ -159,6 +183,10 @@ nav li a:hover {
 	float:right;
 }
 
+
+/* Rund um die Darstellung bestimmter Listen */
+
+
 .liste {
 	margin-left:15px;
 	padding-left:0px
@@ -171,6 +199,10 @@ ol.liste {
 .liste li {
 	padding-bottom:5px;
 }
+
+
+/* Rund um die Darstellung bestimmter Tabellen */
+
 
 .tabelle {
 	border-left:1px solid #000000;
@@ -212,7 +244,94 @@ ol.liste {
 }
 
 
-/* M 2022 */
+/* Einnahme-Ausgabe-Rechnung wird in Protokollen wie 2006, 7, 10, 12 und 15 benutzt */
+
+
+table.earechnung { border-left:1px solid black; border-top:1px solid black; border-spacing:0px;}
+table.earechnung th { border-right:1px solid black; border-bottom:1px solid black; padding:4px; }
+table.earechnung td { border-right:1px solid black; border-bottom:1px solid black; padding:4px; }
+table.earechnung td.nr { text-align:right; }                   /* Die Spalten mit Geldwerten rechtsbündig */
+table.earechnung tbody tr:last-child { font-weight:bold; }     /* Letzte Zeile zeigt die Gesamtsumme fett */
+table.earechnung tbody td.ueberschrift { text-align:center; }  /* Zwischenüberschrift über alle 4 Spalten */
+
+
+/* Kram, der auf einzelnen HTML-Seiten zusaetzlich vorhanden war*/
+
+
+/* found in: verein/satzung,. */
+.satzung, .index {
+	list-style:none;
+	margin-left:0px;
+	padding-left:0px;
+}
+/* found in: verein/satzung,. */
+.satzung li {
+	padding-bottom:15px;
+}
+/* found in: verein/satzung,. */
+.index {
+	font-weight:bold;
+}
+/* found in: verein/satzung,. */
+.unterpara li {
+	list-style-type : lower-alpha;
+	padding-bottom:0px;
+}
+/* found in: verein/satzung,. */
+.para li {
+	padding-bottom:0px;
+}
+/* found in: verein/satzung,. */
+.satzung li:first-line {
+	font-weight:bold;
+}
+/* found in: verein/satzung,. */
+.para li:first-line {
+	font-weight:normal;
+}
+/* found in: verein/satzung,. */
+.unterpara li:first-line {
+	font-weight:normal;
+}
+/* found in: faq,. */
+dt {
+	font-weight:bold;
+	padding-bottom:10px;
+}
+/* found in: faq,. */
+dd {
+	padding-left:0px;
+	margin-left:15px;
+	margin-bottom:10px;
+}
+/* found in: archiv/index,. */
+nav ul.submenu li {
+	display:block;
+	text-align:left;
+}
+/* found in: verein/datenschutz, verein/impressum,. */
+#vorstand th {
+	padding-right: 10px;
+	border:none;
+	font-weight:normal;
+	text-align:left;
+}
+/* found in:  texte/styles.css */
+#content ol.liste ul {
+	margin-top:5px;
+}
+/* found in:  texte/styles.css */
+.ort {
+	margin-left:30px;
+}
+/* found in:  texte/styles.css */
+.inhaltsangabe {
+	font-weight:bold;
+}
+
+
+/* Layout Element, das etwas eingerückt dargestellt werden soll */
+
 
 .indented {
 	margin-left:15px;
